@@ -13,6 +13,7 @@
   </header>
 
   <nav>
+    <div class="menu-btn">☰</div>
     <a href="index.html">Inicio</a>
     <a href="historia.html">Historia</a>
     <a href="mision-vision.html">Misión y Visión</a>
@@ -53,4 +54,38 @@
       </ol>
 
       <h3>Horarios de atención</h3>
-     
+           <p>
+        Lunes a viernes, de 08h00 a 13h00  
+        <br>
+        Secretaría de la Unidad Educativa Municipal Borja
+      </p>
+
+      <h3>Información adicional</h3>
+      <p>
+        La institución prioriza la atención a familias de sectores vulnerables, 
+        por lo que se recomienda acudir con anticipación durante el periodo de 
+        inscripciones. El proceso es completamente gratuito y no requiere 
+        intermediarios.
+      </p>
+
+      <p>
+        Para consultas adicionales, los representantes pueden comunicarse a través 
+        de los canales oficiales o acercarse directamente a las instalaciones.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Unidad Educativa Municipal Borja — Proyecto de Vinculación UEES
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('nav');
+
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
