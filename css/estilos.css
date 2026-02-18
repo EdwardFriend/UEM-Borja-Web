@@ -19,21 +19,25 @@ body {
 }
 
 header {
-  background: var(--primary);
-  color: #fff;
-  padding: 60px 20px 40px;
+  background: linear-gradient(135deg, #1f5675, #2a6f97);
+  color: #ffffff;
   text-align: center;
+  padding: 30px 15px;
+  border-bottom: 4px solid #15405a;
 }
 
 header h1 {
   margin: 0;
   font-size: 2.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 
 header p {
-  margin-top: 10px;
-  font-style: italic;
+  margin: 8px 0 0;
   font-size: 1.1rem;
+  font-style: italic;
+  opacity: 0.9;
 }
 
 nav {
@@ -173,12 +177,13 @@ ul {
 }
 
 footer {
-  background: var(--primary-dark);
-  color: #fff;
+  margin-top: 40px;
+  background-color: #1f5675;
+  color: #ffffff;
   text-align: center;
   padding: 18px 10px;
-  font-size: 0.85rem;
-  margin-top: 30px;
+  font-size: 0.95rem;
+  border-top: 3px solid #15405a;
 }
 
 @media (max-width: 768px) {
