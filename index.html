@@ -13,6 +13,7 @@
   </header>
 
   <nav>
+    <div class="menu-btn">☰</div>
     <a href="index.html">Inicio</a>
     <a href="historia.html">Historia</a>
     <a href="mision-vision.html">Misión y Visión</a>
@@ -48,10 +49,41 @@
         </div>
       </div>
     </section>
+
+      <section class="novedades">
+  <h2>Noticias y Novedades</h2>
+  <p>En esta sección se publicarán próximamente comunicados, actividades, eventos y logros de la Unidad Educativa Municipal Borja.</p>
+
+  <div class="novedades-grid">
+    <div class="novedad-card">
+      <h3>Próxima actualización</h3>
+      <p>Se está preparando contenido informativo para esta sección. Muy pronto se publicarán noticias relevantes para la comunidad educativa.</p>
+    </div>
+
+    <div class="novedad-card">
+      <h3>Eventos institucionales</h3>
+      <p>La institución compartirá aquí los eventos más importantes del año lectivo.</p>
+    </div>
+
+    <div class="novedad-card">
+      <h3>Comunicados oficiales</h3>
+      <p>Los representantes podrán consultar comunicados y avisos importantes desde esta sección.</p>
+    </div>
+  </div>
+</section>
   </main>
 
   <footer>
     Unidad Educativa Municipal Borja — Proyecto de Vinculación UEES
   </footer>
+
+  <script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('nav');
+
+  menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
