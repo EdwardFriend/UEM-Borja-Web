@@ -565,3 +565,51 @@ footer {
     left: -10px;
   }
 }
+
+/* Sección de bienvenida institucional */
+.bienvenida {
+  background: linear-gradient(135deg, #e8f1f7, #f5f9fc);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 3px solid #d0e2ec;
+}
+
+.bienvenida-contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.bienvenida h2 {
+  margin-top: 0;
+  color: #1f5675;
+  font-size: 1.8rem;
+}
+
+.bienvenida p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .bienvenida {
+    padding: 25px 10px;
+  }
+
+  .bienvenida-contenido {
+    padding: 20px 15px;
+  }
+
+  .bienvenida h2 {
+    font-size: 1.5rem;
+  }
+
+  .bienvenida p {
+    font-size: 1rem;
+  }
+}
