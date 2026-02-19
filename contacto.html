@@ -25,38 +25,39 @@
     <a href="contacto.html">Contacto</a>
   </nav>
 
-  <main>
-    <section>
-      <h2>Contacto</h2>
-      <p>
-        Para consultas, información sobre inscripciones o comunicación con la 
-        institución, los representantes pueden acercarse a nuestras instalaciones 
-        o utilizar los siguientes canales de contacto.
-      </p>
+<main>
+  <section class="contacto-contenedor">
 
-      <h3>Información de contacto</h3>
+    <div class="contacto-formulario">
+      <h2>Formulario de contacto</h2>
+      <p>Complete el siguiente formulario para enviar un mensaje a la institución.</p>
+
+      <form>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+
+    <div class="contacto-info">
+      <h2>Información de contacto</h2>
       <ul>
         <li><strong>Dirección:</strong> Barrio San Francisco de Borja, parroquia Sucre, cantón Loja</li>
-        <li><strong>Horario de atención:</strong> Lunes a viernes, de 08h00 a 13h00</li>
-        <li><strong>Teléfono:</strong> (07) 000-0000</li>
-        <li><strong>Correo institucional:</strong> contacto@uem-borja.edu.ec</li>
+        <li><strong>Horario:</strong> Lunes a viernes, de 08h00 a 13h00</li>
+        <li><strong>Teléfono:</strong> (07) 000-00000</li>
+        <li><strong>Correo:</strong> contacto@uem-borja.edu.ec</li>
       </ul>
+    </div>
 
-      <h3>Formulario de contacto</h3>
-      <form class="form-contacto">
-        <label>Nombre completo:</label>
-        <input type="text" placeholder="Ingrese su nombre" required>
-
-        <label>Correo electrónico:</label>
-        <input type="email" placeholder="Ingrese su correo" required>
-
-        <label>Mensaje:</label>
-        <textarea rows="5" placeholder="Escriba su mensaje" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-  </main>
+  </section>
+</main>
 
   <footer>
     Unidad Educativa Municipal Borja — Proyecto de Vinculación UEES
