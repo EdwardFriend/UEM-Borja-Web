@@ -13,6 +13,7 @@
   </header>
 
   <nav>
+    <div class="menu-btn">☰</div>
     <a href="index.html">Inicio</a>
     <a href="historia.html">Historia</a>
     <a href="mision-vision.html">Misión y Visión</a>
@@ -48,5 +49,14 @@
   <footer>
     Unidad Educativa Municipal Borja — Proyecto de Vinculación UEES
   </footer>
+
+  <script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('nav');
+
+  menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>

@@ -13,6 +13,7 @@
   </header>
 
   <nav>
+    <div class="menu-btn">☰</div>
     <a href="index.html">Inicio</a>
     <a href="historia.html">Historia</a>
     <a href="mision-vision.html">Misión y Visión</a>
@@ -35,13 +36,16 @@
       </p>
 
       <div class="galeria-grid">
-        <!-- Ejemplos de imágenes. Puedes reemplazar los src por fotos reales -->
-        <img src="https://via.placeholder.com/300x200" alt="Imagen 1">
-        <img src="https://via.placeholder.com/300x200" alt="Imagen 2">
-        <img src="https://via.placeholder.com/300x200" alt="Imagen 3">
-        <img src="https://via.placeholder.com/300x200" alt="Imagen 4">
-        <img src="https://via.placeholder.com/300x200" alt="Imagen 5">
-        <img src="https://via.placeholder.com/300x200" alt="Imagen 6">
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Imagen 1">
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Imagen 2">
+        </div>
+        <div class="galeria-item">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Imagen 3">
+        </div>
+        <!-- más imágenes -->
       </div>
     </section>
   </main>
@@ -49,5 +53,14 @@
   <footer>
     Unidad Educativa Municipal Borja — Proyecto de Vinculación UEES
   </footer>
+
+  <script>
+  const menuBtn = document.querySelector('.menu-btn');
+  const nav = document.querySelector('nav');
+
+  menuBtn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
