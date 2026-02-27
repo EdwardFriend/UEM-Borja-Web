@@ -567,11 +567,20 @@ footer {
 }
 
 /* Sección de bienvenida institucional */
+
 .bienvenida {
-  background: linear-gradient(135deg, #e8f1f7, #f5f9fc);
-  padding: 40px 20px;
-  text-align: center;
-  border-bottom: 3px solid #d0e2ec;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.55)
+    ),
+    url("img/escuela.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .bienvenida-contenido {
