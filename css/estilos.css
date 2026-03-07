@@ -20,44 +20,38 @@ body {
 }
 
 /* ===========================
-   HEADER CON ESCUDO
+   HEADER + ESCUDO
 =========================== */
 header {
   position: relative;
   background: linear-gradient(135deg, #1f5675, #2a6f97);
   color: #ffffff;
   text-align: center;
-  padding: 30px 15px;
+  padding: 35px 15px;
   border-bottom: 4px solid #15405a;
 }
 
-.header-contenido {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-}
-
+/* ESCUDO PEQUEÑO EN ESQUINA */
 .escudo-esquina {
   position: absolute;
-  top: 12px;
-  left: 12px;
-  width: 60px;
-  height: auto;
+  top: 10px;
+  left: 10px;
+  width: 55px !important;
+  height: auto !important;
+  object-fit: contain;
+  z-index: 20;
 }
 
-
-.header-texto h1 {
+header h1 {
   margin: 0;
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: 700;
 }
 
-.header-texto p {
-  margin: 5px 0 0;
-  font-size: 1.1rem;
+header p {
+  margin: 6px 0 0;
+  font-size: 1rem;
   font-style: italic;
-  opacity: 0.95;
 }
 
 /* Franja institucional */
@@ -287,10 +281,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .header-contenido {
-    flex-direction: column;
-    text-align: center;
-  }
 
   .contacto-contenedor {
     grid-template-columns: 1fr;
