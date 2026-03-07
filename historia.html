@@ -9,13 +9,13 @@
 <body>
   <header>
     <h1>Unidad Educativa Municipal Borja</h1>
-    <p>"Educar con valores"</p>
+    <p>Educar con valores</p>
   </header>
 
   <nav>
     <div class="menu-btn">☰</div>
     <a href="index.html">Inicio</a>
-    <a href="historia.html">Historia</a>
+    <a href="historia.html" class="activo">Historia</a>
     <a href="mision-vision.html">Misión y Visión</a>
     <a href="valores.html">Valores</a>
     <a href="oferta.html">Oferta educativa</a>
@@ -28,70 +28,49 @@
   <main>
     <section>
       <h2>Historia institucional</h2>
+
       <p>
-        La Unidad Educativa Municipal Borja está ubicada en el barrio San Francisco de Borja, parroquia Sucre,
-        cantón Loja. Fue creada en septiembre de 2003 mediante acuerdo ministerial Nro. 008 del Ministerio de Educación.
+        La Unidad Educativa Municipal Borja está ubicada en el barrio San Francisco de Borja,
+        parroquia Sucre, cantón Loja. Fue creada en septiembre de 2003 mediante acuerdo
+        ministerial Nro. 008 del Ministerio de Educación.
       </p>
+
       <p>
-        Inició su labor pedagógica con 31 estudiantes y, en la actualidad, atiende a 140 niños y niñas. Desde sus inicios
-        se ha destacado por su compromiso con la formación integral de los estudiantes, promoviendo valores, disciplina
-        y excelencia académica.
+        Inició su labor pedagógica con 31 estudiantes y, en la actualidad, atiende a un total
+        de 140 niños y niñas. Desde sus inicios se ha destacado por su compromiso con la
+        formación integral de los estudiantes, promoviendo valores, disciplina y excelencia
+        académica.
       </p>
+
       <p>
-        Además de la formación académica, se desarrollan actividades como danza, estudiantina, teatro y deportes, que han
-        permitido obtener reconocimientos dentro y fuera de la institución.
+        Además de la formación académica, la institución desarrolla actividades como danza,
+        estudiantina, teatro y deportes, obteniendo reconocimientos dentro y fuera de la
+        institución.
       </p>
+
       <p>
-        La colaboración de los padres de familia es un pilar fundamental, contribuyendo al desarrollo y fortalecimiento
-        de la comunidad educativa.
+        La colaboración e involucramiento de los padres de familia constituye un pilar
+        fundamental, contribuyendo al desarrollo y fortalecimiento de la comunidad educativa.
       </p>
     </section>
 
-    <section class="linea-tiempo">
-    <h2>Línea de tiempo institucional</h2>
-
-    <div class="evento">
-      <div class="contenido">
-        <h3>1990 — Fundación</h3>
-        <p>La Unidad Educativa Municipal Borja inicia sus actividades con el objetivo de brindar educación de calidad a la comunidad.</p>
-      </div>
-    </div>
-
-    <div class="evento">
-      <div class="contenido">
-        <h3>2005 — Ampliación de infraestructura</h3>
-        <p>Se construyen nuevas aulas y espacios recreativos para atender a un mayor número de estudiantes.</p>
-      </div>
-    </div>
-
-    <div class="evento">
-      <div class="contenido">
-        <h3>2015 — Implementación de programas pedagógicos</h3>
-        <p>La institución incorpora metodologías innovadoras para fortalecer el aprendizaje integral.</p>
-      </div>
-    </div>
-
-    <div class="evento">
-      <div class="contenido">
-        <h3>2024 — Actualización institucional</h3>
-        <p>Se moderniza la imagen institucional y se desarrollan nuevos proyectos educativos y tecnológicos.</p>
-      </div>
-    </div>
-
-  </section>
+    <!-- Línea de tiempo eliminada porque NO existe en la historia oficial -->
   </main>
 
   <footer>
-    Unidad Educativa Municipal Borja — Proyecto de Vinculación UEES
+    Unidad Educativa Municipal Borja — Av. Bello Horizonte entre Cúcuta y Charity — Loja, Ecuador ·
+    Teléfono: 0993951797 · Email: escuelamunicipalboroja@gmail.com
+    <br>
+    Proyecto de Vinculación UEES
   </footer>
 
   <script>
-  const menuBtn = document.querySelector('.menu-btn');
-  const nav = document.querySelector('nav');
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('nav');
 
-  menuBtn.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
