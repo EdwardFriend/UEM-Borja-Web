@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institucional | Unidad Educativa Municipal Borja</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>Unidad Educativa Municipal Borja</h1>
+    <p>Educar con valores</p>
+  </header>
+
+  <nav>
+    <div class="menu-btn">☰</div>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="institucional.html" class="activo">Institucional</a>
+    <a href="oferta.html">Oferta educativa</a>
+    <a href="docentes.html">Planta docente</a>
+    <a href="inscripcion.html">Inscripción</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <main>
+
+    <!-- Misión -->
+    <section>
+      <h2>Misión</h2>
+      <p>
+        La Unidad Educativa Municipal Borja se desarrolla y consolida como una institución
+        que está a la vanguardia en la formación de niños y niñas de los sectores más
+        vulnerables de la ciudad de Loja. Cuenta con docentes capacitados y comprometidos,
+        capaces de brindar una educación de calidad, quienes trabajan junto a niños/as y
+        padres de familia conscientes de la importancia de una formación integral, interesados
+        en que las nuevas generaciones sean competentes y generadoras de cambios sustanciales
+        en la sociedad.
+      </p>
+    </section>
+
+    <!-- Visión -->
+    <section>
+      <h2>Visión</h2>
+      <p>
+        La Unidad Educativa Municipal Borja es una institución financiada por el Gobierno
+        Autónomo Descentralizado Municipal de Loja, sin fines de lucro, que trabaja acorde
+        a los adelantos científicos y tecnológicos, brindando una educación con calidad y
+        calidez desde el Nivel Inicial II hasta Séptimo Año de Educación General Básica.
+      </p>
+      <p>
+        Aplica el modelo pedagógico constructivista e imparte valores éticos y morales,
+        formando estudiantes íntegros con capacidad para resolver problemas de cálculo
+        mental, razonamiento lógico y comprensión lectora, con alto sentido de identidad
+        y conciencia ecológica; entregando a futuro niños/as líderes, creativos, competitivos
+        y expresivos, capaces de construir un mañana mejor.
+      </p>
+    </section>
+
+    <!-- Valores -->
+    <section>
+      <h2>Valores institucionales</h2>
+      <ul>
+        <li><strong>Trascender:</strong> Relación de todo ser humano con su Creador.</li>
+        <li><strong>Justicia:</strong> Accionar con equidad en todos los ámbitos.</li>
+        <li><strong>Libertad:</strong> “Libres para liberar, pensar y actuar”.</li>
+        <li><strong>Solidaridad:</strong> Compartir con quienes más lo necesitan.</li>
+        <li><strong>Verdad:</strong> Eje y referente de todas las acciones institucionales.</li>
+        <li><strong>Amor:</strong> Comprensión, servicio, respeto y entrega.</li>
+        <li><strong>Esperanza:</strong> Firme convicción de cambio social.</li>
+        <li><strong>Críticos y reflexivos:</strong> Actuar con criterios basados en hechos reales.</li>
+        <li><strong>Autenticidad:</strong> Identidad propia y toma de decisiones responsables.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    Unidad Educativa Municipal Borja — Av. Bello Horizonte entre Cúcuta y Charity — Loja, Ecuador ·
+    Teléfono: 0993951797 · Email: escuelamunicipalboroja@gmail.com
+    <br>
+    Proyecto de Vinculación UEES
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('nav');
+
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
