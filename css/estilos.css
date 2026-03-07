@@ -1,7 +1,7 @@
 :root {
   --primary: #0056a3;
   --primary-dark: #003d73;
-  --bg: #f5f5f5;
+  --bg: #eef4f8;
   --text: #333;
   --accent: #f0b429;
 }
@@ -19,37 +19,64 @@ body {
   color: var(--text);
 }
 
-/* HEADER */
+/* ===========================
+   HEADER CON ESCUDO
+=========================== */
 header {
   background: linear-gradient(135deg, #1f5675, #2a6f97);
   color: #ffffff;
-  text-align: center;
-  padding: 30px 15px;
+  padding: 30px 15px 40px;
   border-bottom: 4px solid #15405a;
 }
 
-header h1 {
+.header-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.escudo {
+  width: 95px;
+  height: auto;
+  background: white;
+  padding: 6px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+.header-texto h1 {
   margin: 0;
   font-size: 2.2rem;
-  letter-spacing: 1px;
   font-weight: 700;
 }
 
-header p {
-  margin: 8px 0 0;
+.header-texto p {
+  margin: 5px 0 0;
   font-size: 1.1rem;
   font-style: italic;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
-/* NAV */
+/* Franja institucional */
+header::after {
+  content: "";
+  display: block;
+  height: 6px;
+  background: linear-gradient(90deg, #003d73, #0056a3, #2a6f97);
+  margin-top: 18px;
+}
+
+/* ===========================
+   MENÚ
+=========================== */
 nav {
   background: var(--primary-dark);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
-  padding: 10px 15px;
+  padding: 12px 15px;
 }
 
 nav a {
@@ -57,17 +84,22 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   font-size: 0.95rem;
-  padding: 6px 10px;
-  border-radius: 4px;
-  transition: background 0.2s;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.05);
+  transition: 0.2s;
 }
 
 nav a:hover,
 nav a.activo {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--accent);
+  color: #000;
+  transform: translateY(-2px);
 }
 
-/* MAIN */
+/* ===========================
+   CONTENIDO
+=========================== */
 main {
   max-width: 1100px;
   margin: 20px auto 40px;
@@ -76,24 +108,29 @@ main {
 
 section {
   background: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding: 25px 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  border-left: 6px solid var(--primary);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: 0.2s ease;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 section h2 {
   margin-top: 0;
   color: var(--primary);
-  border-left: 4px solid var(--accent);
-  padding-left: 10px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 section h3 {
   margin-top: 20px;
   color: var(--primary-dark);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 p {
@@ -107,33 +144,9 @@ ul {
   margin: 8px 0;
 }
 
-/* GRID */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-}
-
-/* HIGHLIGHT BOX */
-.highlight-box {
-  background: #f9fafb;
-  border-radius: 6px;
-  padding: 12px 14px;
-  border-left: 4px solid var(--primary);
-}
-
-/* FOOTER */
-footer {
-  margin-top: 40px;
-  background-color: #1f5675;
-  color: #ffffff;
-  text-align: center;
-  padding: 18px 10px;
-  font-size: 0.95rem;
-  border-top: 3px solid #15405a;
-}
-
-/* GALERÍA */
+/* ===========================
+   GALERÍA
+=========================== */
 .galeria-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -143,7 +156,7 @@ footer {
 
 .galeria-item {
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.15);
   transition: transform 0.2s ease;
   background: white;
@@ -155,8 +168,6 @@ footer {
 
 .galeria-item img {
   width: 100%;
-  height: auto;
-  display: block;
   transition: transform 0.3s ease;
 }
 
@@ -164,32 +175,27 @@ footer {
   transform: scale(1.08);
 }
 
-/* CONTACTO */
+/* ===========================
+   CONTACTO
+=========================== */
 .contacto-contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 30px;
-  padding: 20px;
 }
 
 .contacto-formulario,
 .contacto-info {
   background: #f5f9fc;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .contacto-formulario h2,
 .contacto-info h2 {
   color: #1f5675;
-  margin-top: 0;
-}
-
-.contacto-formulario form {
-  display: flex;
-  flex-direction: column;
 }
 
 .contacto-formulario label {
@@ -214,51 +220,16 @@ footer {
   border-radius: 6px;
   cursor: pointer;
   font-size: 1rem;
+  transition: 0.2s;
 }
 
 .contacto-formulario button:hover {
   background-color: #15405a;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .grid-2 {
-    grid-template-columns: 1fr;
-  }
-
-  .contacto-contenedor {
-    grid-template-columns: 1fr;
-  }
-
-  nav {
-    position: relative;
-  }
-
-  .menu-btn {
-    display: block;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 10px;
-    color: #ffffff;
-    background-color: #1f5675;
-    width: 100%;
-    text-align: left;
-  }
-
-  nav a {
-    display: none;
-    background-color: #2a6f97;
-    color: white;
-    padding: 12px;
-    border-bottom: 1px solid #15405a;
-  }
-
-  nav.active a {
-    display: block;
-  }
-}
-
-/* PORTADA */
+/* ===========================
+   PORTADA (BIENVENIDA)
+=========================== */
 .bienvenida {
   background: linear-gradient(
       rgba(0, 0, 0, 0.55),
@@ -267,11 +238,10 @@ footer {
     url("../img/escuela.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   padding: 120px 20px;
   color: white;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .bienvenida-contenido {
@@ -291,6 +261,58 @@ footer {
 
 .bienvenida p {
   font-size: 1.1rem;
-  line-height: 1.6;
   color: #333;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  margin-top: 40px;
+  background-color: #1f5675;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.95rem;
+  border-top: 3px solid #15405a;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contacto-contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 2rem;
+    padding: 10px;
+    background: #1f5675;
+    color: white;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  nav a {
+    display: none;
+    background: #2a6f97;
+    padding: 12px;
+    border-bottom: 1px solid #15405a;
+  }
+
+  nav.active a {
+    display: block;
+  }
 }
