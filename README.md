@@ -51,4 +51,25 @@ El sitio web incluye las siguientes secciones:
 
 ---
 
-## 👨‍💻 Desarrollo del
+## 👨‍💻 Desarrollo del Proyecto
+
+El proyecto fue desarrollado utilizando la información oficial proporcionada por la institución.  
+El primer acercamiento formal con la Unidad Educativa se realizó el día de la presentación del proyecto, donde se entregó el sitio web final y se recibió la retroalimentación correspondiente.
+
+---
+
+## 📝 Testimonio de la Institución
+
+*"La Unidad Educativa Municipal Borja agradece la entrega del proyecto web desarrollado por los estudiantes. Aunque el primer acercamiento formal se realizó el día de la presentación del proyecto, pudimos evidenciar el esfuerzo, la dedicación y el criterio técnico aplicado en la elaboración del sitio. El resultado final es una página funcional, clara y alineada con nuestra identidad institucional, que fortalecerá la comunicación con nuestra comunidad educativa y mejorará nuestra presencia digital."*
+
+**Mgtr. Gabriela Guambaña Lanche**  
+Docente de Informática  
+Unidad Educativa Municipal Borja  
+
+---
+
+## 📌 Autor
+
+**Mario Eduardo Luzardo Fierro**  
+Estudiante de Ingeniería en Ciencias de la Computación — UEES  
+Proyecto de Vinculación con la Comunidad  
