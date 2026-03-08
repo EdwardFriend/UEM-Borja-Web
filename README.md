@@ -54,7 +54,6 @@ El sitio web incluye las siguientes secciones:
 ## 👨‍💻 Desarrollo del Proyecto
 
 El proyecto fue desarrollado utilizando la información oficial proporcionada por la institución.  
-El primer acercamiento formal con la Unidad Educativa se realizó el día de la presentación del proyecto, donde se entregó el sitio web final y se recibió la retroalimentación correspondiente.
 
 ---
 
